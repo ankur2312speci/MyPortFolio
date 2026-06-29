@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ankur Singh - Master Portfolio
 
 A unique, production-ready developer portfolio for **Ankur Singh**, specializing in **Cyber Security & Networking**. Built using **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion** with smooth-scrolling by **Lenis**.
@@ -76,3 +77,6 @@ To populate your projects, skills, certificates, and details, modify the typed d
 📄 `src/data/portfolioData.ts`
 
 Any edits to this file will instantly cascade throughout the site components, JSON-LD rich search schemas, print CV outlines, and case study selectors.
+=======
+# MyPortFolio
+>>>>>>> 6687283f7b38759dafa98f7e0fa2e310d6594d23
