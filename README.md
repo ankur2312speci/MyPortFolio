@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ankur Singh - Master Portfolio
 
-## Getting Started
+A unique, production-ready developer portfolio for **Ankur Singh**, specializing in **Cyber Security & Networking**. Built using **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion** with smooth-scrolling by **Lenis**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Tech Stack & Architecture
+
+- **Framework:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS v4 (with semantic variables mapping)
+- **Theme:** `next-themes` (Dark Mode by default, Light, System)
+- **Animations:** Framer Motion (subtle fades, layout-transitions)
+- **Scroll Engine:** Lenis Smooth Scroll
+- **Icons:** Lucide Icons
+
+---
+
+## 📂 Project Structure
+
+```text
+├── public/                 # Static assets (Resume, images)
+├── src/
+│   ├── app/                # Next.js App Router (pages & global layouts)
+│   │   ├── globals.css     # Global styles & Tailwind v4 variables
+│   │   ├── layout.tsx      # Base layout, metadata, font configuration
+│   │   └── page.tsx        # Homepage orchestrator
+│   ├── components/         # Reusable presentation & feature components
+│   │   ├── Background.tsx  # Cursor-responsive SVG networking grid
+│   │   ├── Navbar.tsx      # Floating nav with theme toggle & intersection observer
+│   │   ├── Hero.tsx        # Title & animated cyber terminal logger
+│   │   ├── About.tsx       # Bio & education overview
+│   │   ├── Skills.tsx      # Skill groups & proficiency indicators
+│   │   ├── LearningTimeline.tsx # Milestone timeline with gained competencies
+│   │   ├── Projects.tsx    # Tech filter & modal-based case study reader
+│   │   ├── Certifications.tsx # Cards & verification lightboxes
+│   │   ├── Resume.tsx      # CV interactive preview & print controls
+│   │   ├── Contact.tsx     # Validated contact form & social channels
+│   │   └── Footer.tsx      # Copyright & social anchors
+│   ├── data/
+│   │   └── portfolioData.ts # Typed central data model (Modify this to customize content)
+│   └── hooks/
+│       └── useActiveSection.ts # Intersection observer for navigation highlighting
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Pre-requisites
+Ensure you have **Node.js** (v18.0.0 or higher) and **npm** installed.
 
-## Learn More
+### 2. Install Dependencies
+Initialize package dependencies:
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Run Development Server
+Start local server:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) on your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Build Production Bundle
+Build and verify static optimization:
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🖊️ Content Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To populate your projects, skills, certificates, and details, modify the typed database file:
+📄 `src/data/portfolioData.ts`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Any edits to this file will instantly cascade throughout the site components, JSON-LD rich search schemas, print CV outlines, and case study selectors.
