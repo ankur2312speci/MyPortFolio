@@ -4,7 +4,7 @@
   --font-sans: var(--font-inter), sans-serif;
   --font-display: var(--font-space-grotesk), sans-serif;
   --font-mono: var(--font-fira-code), monospace;
-  
+
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
@@ -25,72 +25,82 @@
 
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
-  
+
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
 }
 
 :root {
-  --background: #fafafa; /* Cool Paper */
-  --foreground: #18181b; /* Zinc 900 */
-  
+  --background: #fafafa;
+  /* Cool Paper */
+  --foreground: #18181b;
+  /* Zinc 900 */
+
   --card: #ffffff;
   --card-foreground: #18181b;
-  
+
   --muted: #f4f4f5;
   --muted-foreground: #71717a;
-  
-  --primary: #dc2626; /* Red Hat Red */
+
+  --primary: #dc2626;
+  /* Red Hat Red */
   --primary-foreground: #ffffff;
-  
+
   --secondary: #fafafa;
   --secondary-foreground: #dc2626;
-  
-  --accent: #ea580c; /* Orange Rust */
+
+  --accent: #ea580c;
+  /* Orange Rust */
   --accent-foreground: #ffffff;
-  
+
   --border: #e4e4e7;
   --input: #e4e4e7;
   --ring: rgba(220, 38, 38, 0.4);
-  
+
   --radius: 0.75rem;
-  
+
   --glow-color: rgba(220, 38, 38, 0.05);
   --grid-color: rgba(24, 24, 27, 0.03);
 }
 
 .dark {
-  --background: #080808; /* Deep Charcoal Console */
-  --foreground: #f4f4f5; /* Warm silver */
-  
-  --card: #121212; /* Charcoal Obsidian */
+  --background: #080808;
+  /* Deep Charcoal Console */
+  --foreground: #f4f4f5;
+  /* Warm silver */
+
+  --card: #121212;
+  /* Charcoal Obsidian */
   --card-foreground: #f4f4f5;
-  
+
   --muted: #1a1a1a;
   --muted-foreground: #a1a1aa;
-  
-  --primary: #ef4444; /* Bright Red Hat Red */
+
+  --primary: #ef4444;
+  /* Bright Red Hat Red */
   --primary-foreground: #ffffff;
-  
+
   --secondary: #080808;
   --secondary-foreground: #ef4444;
-  
-  --accent: #f97316; /* Glowing Coral / Orange */
+
+  --accent: #f97316;
+  /* Glowing Coral / Orange */
   --accent-foreground: #ffffff;
-  
-  --border: rgba(239, 68, 68, 0.09); /* Subtle red border line */
+
+  --border: rgba(239, 68, 68, 0.09);
+  /* Subtle red border line */
   --input: rgba(239, 68, 68, 0.09);
   --ring: rgba(239, 68, 68, 0.4);
-  
+
   --glow-color: rgba(239, 68, 68, 0.04);
   --grid-color: rgba(239, 68, 68, 0.015);
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* box-sizing: border-box; */
+  /* margin: ;
+  padding: 0; */
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -108,7 +118,8 @@ body {
 }
 
 /* Lenis smooth scrolling compatibility */
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
@@ -192,18 +203,24 @@ section {
 }
 
 @keyframes driftTopographySlow {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0px, 0px) rotate(0deg);
   }
+
   50% {
     transform: translate(15px, -10px) rotate(0.5deg);
   }
 }
 
 @keyframes driftTopographyMedium {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0px, 0px) rotate(0deg);
   }
+
   50% {
     transform: translate(-10px, 15px) rotate(-0.5deg);
   }
@@ -220,42 +237,56 @@ section {
 }
 
 @keyframes blobDrift1 {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0px, 0px) scale(1);
   }
+
   33% {
     transform: translate(30px, -50px) scale(1.08);
   }
+
   66% {
     transform: translate(-20px, 20px) scale(0.95);
   }
 }
 
 @keyframes blobDrift2 {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0px, 0px) scale(1);
   }
+
   50% {
     transform: translate(-40px, 40px) scale(0.92);
   }
 }
 
 @keyframes blobDrift3 {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0px, 0px) scale(1);
   }
+
   33% {
     transform: translate(20px, 30px) scale(1.05);
   }
+
   66% {
     transform: translate(-30px, -20px) scale(0.9);
   }
 }
 
 @keyframes blobDrift4 {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0px, 0px) scale(1);
   }
+
   50% {
     transform: translate(30px, -30px) scale(1.06);
   }
