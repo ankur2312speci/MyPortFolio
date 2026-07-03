@@ -243,7 +243,7 @@ export const projectsData: ProjectCaseStudy[] = [
   learnings:
     "This project strengthened my understanding of full-stack development by giving me practical experience with REST APIs, JWT authentication, password hashing, MongoDB data modeling, React state management, backend architecture, API error handling, and scalable project organization. It also improved my debugging and problem-solving skills while integrating multiple technologies into one application.",
 
-  githubUrl: "https://github.com/YOUR_USERNAME/YOUR_REPOSITORY",
+  githubUrl: "https://github.com/ankur2312speci/saas-project-management",
 
   demoUrl: undefined,
 
@@ -295,14 +295,60 @@ export const projectsData: ProjectCaseStudy[] = [
   learnings:
     "This lab strengthened my understanding of network reconnaissance, port scanning, service detection, web enumeration, Linux environments, and virtual lab setup. It also taught me the importance of systematic information gathering before attempting deeper security analysis and reinforced responsible, ethical testing practices.",
 
-  githubUrl: undefined,
+  githubUrl: "https://github.com/ankur2312speci/metasploitable-security-lab",
+
+  demoUrl: undefined,
+
+  imageUrl: undefined
+},
+{
+  id: "cipher-net-e2ee-social-platform",
+  title: "CipherNet: End-to-End Encrypted Social Platform",
+  category: "02. CYBERSECURITY & FULL-STACK WEB APPLICATION",
+
+  overview:
+    "CipherNet is a modern client-side end-to-end encrypted (E2EE) social platform designed for secure communication, real-time messaging, and high-fidelity peer-to-peer voice and video calls. It features a premium glassmorphic UI, dynamic charts, persistent user settings, and real-time interaction feeds.",
+
+  motivation:
+    "I wanted to challenge myself by building a zero-trust, real-time social platform that goes far beyond standard plain-text chat applications. My goal was to guarantee absolute communication privacy on the web by ensuring the server is completely blind to message contents. This project allowed me to master browser-side Web Crypto APIs, peer-to-peer real-time communication protocols, secure offline key stores, and responsive UI engineering.",
+
+  features: [
+    "End-to-End Encrypted (E2EE) Chat Messaging",
+    "WebRTC High-Fidelity Voice and Video Calling",
+    "Client-side Cryptography (ECDH P-256 & AES-256-GCM)",
+    "Secure Offline Private Key Store in IndexedDB",
+    "Live Creator Analytics & Dynamic Performance Charts",
+    "Optimistic State Updates for Snappy Feed Interactions"
+  ],
+
+  technologies: [
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "Zustand",
+    "Web Crypto API",
+    "IndexedDB",
+    "Node.js",
+    "Express.js",
+    "Socket.IO",
+    "WebRTC",
+    "MongoDB Atlas",
+    "Mongoose",
+    "Recharts"
+  ],
+
+  challenges:
+    "Optimizing intensive client-side cryptographic overhead (ECDH key derivation) during chat typing to prevent frame lags, traversing restrictive firewalls/NATs for low-latency peer-to-peer media streams, and eliminating visual latency during high-frequency database operations.",
+
+  learnings:
+    "Gained deep expertise in native Web Crypto API orchestration, offline secure storage paradigms (IndexedDB vs. LocalStorage), WebRTC SDP/ICE signaling pipelines via Socket.IO, and scalable optimistic state management via Zustand.",
+
+  githubUrl: "https://github.com/ankur2312speci/CipherNet",
 
   demoUrl: undefined,
 
   imageUrl: undefined
 }
-
-
 ];
 
 export const certificationsData: Certification[] = [

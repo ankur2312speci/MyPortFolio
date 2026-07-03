@@ -229,7 +229,7 @@ export function Resume() {
               </div>
               <div>
                 <h4 className="font-bold text-base text-foreground font-sans">
-                  SaaS &amp; Pentesting Case Studies
+                  SaaS &amp; Pentesting Projects
                 </h4>
                 <p className="text-xs md:text-sm text-muted-foreground leading-relaxed mt-1 font-sans">
                   Designed full-stack dashboards with role-based access validation, and conducted security 
