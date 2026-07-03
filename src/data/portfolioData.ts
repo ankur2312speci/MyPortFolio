@@ -196,159 +196,159 @@ export const timelineMilestones: TimelineMilestone[] = [
 
 export const projectsData: ProjectCaseStudy[] = [
   // TODO: Add your actual projects here as case studies. Do not fabricate.
-  
-{
-  id: "saas-project-management-platform",
-  title: "SaaS Project Management Platform",
-  category: "Full-Stack Web Application",
 
-  overview:
-    "A full-stack SaaS application built to explore modern web application architecture, secure authentication, and scalable backend development. The platform enables users to manage projects, authenticate securely, and access features based on their assigned roles while following production-oriented development practices.",
+  {
+    id: "saas-project-management-platform",
+    title: "SaaS Project Management Platform",
+    category: "Full-Stack Web Application",
 
-  motivation:
-    "I wanted to move beyond basic CRUD projects and build a real-world full-stack application that combines frontend development, backend APIs, authentication, database design, and user authorization. This project helped me understand how modern SaaS platforms are structured and secured.",
+    overview:
+      "A full-stack SaaS application built to explore modern web application architecture, secure authentication, and scalable backend development. The platform enables users to manage projects, authenticate securely, and access features based on their assigned roles while following production-oriented development practices.",
 
-  features: [
-    "Secure JWT Authentication and Authorization",
-    "User Registration & Login",
-    "Role-Based Access Control (Admin/User)",
-    "Project CRUD Operations",
-    "Subscription Plan Management",
-    "Protected API Routes",
-    "Responsive Dashboard Interface",
-    "REST API Integration",
-    "MongoDB Database Integration",
-    "Password Encryption using bcrypt"
-  ],
+    motivation:
+      "I wanted to move beyond basic CRUD projects and build a real-world full-stack application that combines frontend development, backend APIs, authentication, database design, and user authorization. This project helped me understand how modern SaaS platforms are structured and secured.",
 
-  technologies: [
-    "React",
-    "TypeScript",
-    "Vite",
-    "Tailwind CSS",
-    "Node.js",
-    "Express.js",
-    "MongoDB Atlas",
-    "Mongoose",
-    "JWT",
-    "bcrypt",
-    "Git",
-    "GitHub",
-    "Postman"
-  ],
+    features: [
+      "Secure JWT Authentication and Authorization",
+      "User Registration & Login",
+      "Role-Based Access Control (Admin/User)",
+      "Project CRUD Operations",
+      "Subscription Plan Management",
+      "Protected API Routes",
+      "Responsive Dashboard Interface",
+      "REST API Integration",
+      "MongoDB Database Integration",
+      "Password Encryption using bcrypt"
+    ],
 
-  challenges:
-    "The biggest challenge was implementing a secure authentication flow while maintaining a clean separation between the frontend and backend. Designing role-based authorization, protecting routes, structuring MongoDB collections, and managing asynchronous API communication required careful planning and significantly improved my understanding of scalable application architecture.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB Atlas",
+      "Mongoose",
+      "JWT",
+      "bcrypt",
+      "Git",
+      "GitHub",
+      "Postman"
+    ],
 
-  learnings:
-    "This project strengthened my understanding of full-stack development by giving me practical experience with REST APIs, JWT authentication, password hashing, MongoDB data modeling, React state management, backend architecture, API error handling, and scalable project organization. It also improved my debugging and problem-solving skills while integrating multiple technologies into one application.",
+    challenges:
+      "The biggest challenge was implementing a secure authentication flow while maintaining a clean separation between the frontend and backend. Designing role-based authorization, protecting routes, structuring MongoDB collections, and managing asynchronous API communication required careful planning and significantly improved my understanding of scalable application architecture.",
 
-  githubUrl: "https://github.com/ankur2312speci/saas-project-management",
+    learnings:
+      "This project strengthened my understanding of full-stack development by giving me practical experience with REST APIs, JWT authentication, password hashing, MongoDB data modeling, React state management, backend architecture, API error handling, and scalable project organization. It also improved my debugging and problem-solving skills while integrating multiple technologies into one application.",
 
-  demoUrl: undefined,
+    githubUrl: "https://github.com/ankur2312speci/saas-app",
 
-  imageUrl: undefined
-},
+    demoUrl: undefined,
+
+    imageUrl: undefined
+  },
 
 
 
-{
-  id: "metasploitable-security-lab",
-  title: "Metasploitable Security Lab",
-  category: "Cyber Security Lab",
+  {
+    id: "metasploitable-security-lab",
+    title: "Metasploitable Security Lab",
+    category: "Cyber Security Lab",
 
-  overview:
-    "A hands-on cybersecurity lab built using Kali Linux and Metasploitable 2 inside VMware to learn network reconnaissance, service enumeration, vulnerability assessment, and basic penetration testing techniques in a safe, isolated environment.",
+    overview:
+      "A hands-on cybersecurity lab built using Kali Linux and Metasploitable 2 inside VMware to learn network reconnaissance, service enumeration, vulnerability assessment, and basic penetration testing techniques in a safe, isolated environment.",
 
-  motivation:
-    "I wanted practical experience beyond theory by setting up a controlled lab where I could safely practice security concepts, understand common vulnerabilities, and become familiar with industry-standard tools used during the reconnaissance and enumeration phases of a security assessment.",
+    motivation:
+      "I wanted practical experience beyond theory by setting up a controlled lab where I could safely practice security concepts, understand common vulnerabilities, and become familiar with industry-standard tools used during the reconnaissance and enumeration phases of a security assessment.",
 
-  features: [
-    "Local Virtual Lab using VMware",
-    "Kali Linux & Metasploitable 2 Environment",
-    "Network Discovery using Nmap",
-    "Service Enumeration",
-    "Web Server Analysis",
-    "Directory Enumeration with Gobuster",
-    "Web Vulnerability Scanning using Nikto",
-    "SSH & FTP Service Analysis",
-    "Network Mapping & Documentation",
-    "Learning-Oriented Security Workflow"
-  ],
+    features: [
+      "Local Virtual Lab using VMware",
+      "Kali Linux & Metasploitable 2 Environment",
+      "Network Discovery using Nmap",
+      "Service Enumeration",
+      "Web Server Analysis",
+      "Directory Enumeration with Gobuster",
+      "Web Vulnerability Scanning using Nikto",
+      "SSH & FTP Service Analysis",
+      "Network Mapping & Documentation",
+      "Learning-Oriented Security Workflow"
+    ],
 
-  technologies: [
-    "Kali Linux",
-    "Metasploitable 2",
-    "VMware Workstation",
-    "Nmap",
-    "Gobuster",
-    "Nikto",
-    "Linux",
-    "TCP/IP Networking",
-    "SSH",
-    "FTP"
-  ],
+    technologies: [
+      "Kali Linux",
+      "Metasploitable 2",
+      "VMware Workstation",
+      "Nmap",
+      "Gobuster",
+      "Nikto",
+      "Linux",
+      "TCP/IP Networking",
+      "SSH",
+      "FTP"
+    ],
 
-  challenges:
-    "One of the biggest challenges was understanding how different enumeration tools complement each other during an assessment. Interpreting scan results, identifying exposed services, troubleshooting connectivity between virtual machines, and documenting findings required patience and a methodical approach.",
+    challenges:
+      "One of the biggest challenges was understanding how different enumeration tools complement each other during an assessment. Interpreting scan results, identifying exposed services, troubleshooting connectivity between virtual machines, and documenting findings required patience and a methodical approach.",
 
-  learnings:
-    "This lab strengthened my understanding of network reconnaissance, port scanning, service detection, web enumeration, Linux environments, and virtual lab setup. It also taught me the importance of systematic information gathering before attempting deeper security analysis and reinforced responsible, ethical testing practices.",
+    learnings:
+      "This lab strengthened my understanding of network reconnaissance, port scanning, service detection, web enumeration, Linux environments, and virtual lab setup. It also taught me the importance of systematic information gathering before attempting deeper security analysis and reinforced responsible, ethical testing practices.",
 
-  githubUrl: "https://github.com/ankur2312speci/metasploitable-security-lab",
+    githubUrl: "https://github.com/ankur2312speci/metasploitable-security-lab",
 
-  demoUrl: undefined,
+    demoUrl: undefined,
 
-  imageUrl: undefined
-},
-{
-  id: "cipher-net-e2ee-social-platform",
-  title: "CipherNet: End-to-End Encrypted Social Platform",
-  category: "02. CYBERSECURITY & FULL-STACK WEB APPLICATION",
+    imageUrl: undefined
+  },
+  {
+    id: "cipher-net-e2ee-social-platform",
+    title: "CipherNet: End-to-End Encrypted Social Platform",
+    category: "02. CYBERSECURITY & FULL-STACK WEB APPLICATION",
 
-  overview:
-    "CipherNet is a modern client-side end-to-end encrypted (E2EE) social platform designed for secure communication, real-time messaging, and high-fidelity peer-to-peer voice and video calls. It features a premium glassmorphic UI, dynamic charts, persistent user settings, and real-time interaction feeds.",
+    overview:
+      "CipherNet is a modern client-side end-to-end encrypted (E2EE) social platform designed for secure communication, real-time messaging, and high-fidelity peer-to-peer voice and video calls. It features a premium glassmorphic UI, dynamic charts, persistent user settings, and real-time interaction feeds.",
 
-  motivation:
-    "I wanted to challenge myself by building a zero-trust, real-time social platform that goes far beyond standard plain-text chat applications. My goal was to guarantee absolute communication privacy on the web by ensuring the server is completely blind to message contents. This project allowed me to master browser-side Web Crypto APIs, peer-to-peer real-time communication protocols, secure offline key stores, and responsive UI engineering.",
+    motivation:
+      "I wanted to challenge myself by building a zero-trust, real-time social platform that goes far beyond standard plain-text chat applications. My goal was to guarantee absolute communication privacy on the web by ensuring the server is completely blind to message contents. This project allowed me to master browser-side Web Crypto APIs, peer-to-peer real-time communication protocols, secure offline key stores, and responsive UI engineering.",
 
-  features: [
-    "End-to-End Encrypted (E2EE) Chat Messaging",
-    "WebRTC High-Fidelity Voice and Video Calling",
-    "Client-side Cryptography (ECDH P-256 & AES-256-GCM)",
-    "Secure Offline Private Key Store in IndexedDB",
-    "Live Creator Analytics & Dynamic Performance Charts",
-    "Optimistic State Updates for Snappy Feed Interactions"
-  ],
+    features: [
+      "End-to-End Encrypted (E2EE) Chat Messaging",
+      "WebRTC High-Fidelity Voice and Video Calling",
+      "Client-side Cryptography (ECDH P-256 & AES-256-GCM)",
+      "Secure Offline Private Key Store in IndexedDB",
+      "Live Creator Analytics & Dynamic Performance Charts",
+      "Optimistic State Updates for Snappy Feed Interactions"
+    ],
 
-  technologies: [
-    "React",
-    "Vite",
-    "Tailwind CSS",
-    "Zustand",
-    "Web Crypto API",
-    "IndexedDB",
-    "Node.js",
-    "Express.js",
-    "Socket.IO",
-    "WebRTC",
-    "MongoDB Atlas",
-    "Mongoose",
-    "Recharts"
-  ],
+    technologies: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Zustand",
+      "Web Crypto API",
+      "IndexedDB",
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "WebRTC",
+      "MongoDB Atlas",
+      "Mongoose",
+      "Recharts"
+    ],
 
-  challenges:
-    "Optimizing intensive client-side cryptographic overhead (ECDH key derivation) during chat typing to prevent frame lags, traversing restrictive firewalls/NATs for low-latency peer-to-peer media streams, and eliminating visual latency during high-frequency database operations.",
+    challenges:
+      "Optimizing intensive client-side cryptographic overhead (ECDH key derivation) during chat typing to prevent frame lags, traversing restrictive firewalls/NATs for low-latency peer-to-peer media streams, and eliminating visual latency during high-frequency database operations.",
 
-  learnings:
-    "Gained deep expertise in native Web Crypto API orchestration, offline secure storage paradigms (IndexedDB vs. LocalStorage), WebRTC SDP/ICE signaling pipelines via Socket.IO, and scalable optimistic state management via Zustand.",
+    learnings:
+      "Gained deep expertise in native Web Crypto API orchestration, offline secure storage paradigms (IndexedDB vs. LocalStorage), WebRTC SDP/ICE signaling pipelines via Socket.IO, and scalable optimistic state management via Zustand.",
 
-  githubUrl: "https://github.com/ankur2312speci/CipherNet",
+    githubUrl: "https://github.com/ankur2312speci/SocialMediaDashboard-CipherNet",
 
-  demoUrl: undefined,
+    demoUrl: undefined,
 
-  imageUrl: undefined
-}
+    imageUrl: undefined
+  }
 ];
 
 export const certificationsData: Certification[] = [
