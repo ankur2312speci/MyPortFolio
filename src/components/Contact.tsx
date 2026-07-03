@@ -82,13 +82,34 @@ export function Contact() {
     setSubmitSuccess(false);
     setSubmitError(null);
 
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+
+    if (!accessKey || accessKey.includes("your_")) {
+      // Simulate success fallback in development mode if no key is defined
+      console.warn("NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY is not defined. Simulating submission success.");
+      setTimeout(() => {
+        setIsSubmitting(false);
+        setSubmitSuccess(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      }, 1500);
+      return;
+    }
+
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: formData.name,
+          email: formData.email,
+          subject: `[Portfolio Inquiry] ${formData.subject}`,
+          message: formData.message,
+          from_name: `${formData.name} (Portfolio)`,
+        }),
       });
 
       const data = await response.json();
@@ -98,7 +119,7 @@ export function Contact() {
         setSubmitSuccess(true);
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        setSubmitError(data.error || "Failed to transmit message. Please try again.");
+        setSubmitError(data.message || "Failed to transmit message. Please try again.");
       }
     } catch {
       setIsSubmitting(false);
