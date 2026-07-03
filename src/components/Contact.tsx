@@ -30,6 +30,7 @@ export function Contact() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const validate = (): boolean => {
     const tempErrors: FormErrors = {};
@@ -68,20 +69,41 @@ export function Contact() {
     if (errors[name as keyof FormErrors]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
     }
+    if (submitError) {
+      setSubmitError(null);
+    }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
     setSubmitSuccess(false);
+    setSubmitError(null);
 
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
       setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 1800);
+      if (response.ok && data.success) {
+        setSubmitSuccess(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setSubmitError(data.error || "Failed to transmit message. Please try again.");
+      }
+    } catch {
+      setIsSubmitting(false);
+      setSubmitError("Network exception: could not establish a connection to the transmission gateway.");
+    }
   };
 
   return (
@@ -305,6 +327,21 @@ export function Contact() {
                   >
                     <CheckCircle className="h-4.5 w-4.5 shrink-0" />
                     <span>Message transmitted successfully! Secure tunnel closed.</span>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* ERROR TOAST */}
+              <AnimatePresence>
+                {submitError && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="mt-4 p-4 rounded-xl border border-red-500/20 bg-red-500/5 text-red-500 text-xs font-semibold flex items-center gap-2"
+                  >
+                    <AlertCircle className="h-4.5 w-4.5 shrink-0" />
+                    <span>{submitError}</span>
                   </motion.div>
                 )}
               </AnimatePresence>
