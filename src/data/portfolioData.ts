@@ -348,6 +348,44 @@ export const projectsData: ProjectCaseStudy[] = [
     demoUrl: undefined,
 
     imageUrl: undefined
+  },
+  {
+    id: "apma-tip-malware-analysis-platform",
+    title: "APMA-TIP: AI Malware Analysis Platform",
+    category: "03. CYBERSECURITY & ISOLATED MICROSERVICES",
+    overview:
+      "APMA-TIP is a high-performance malware analysis and threat intelligence platform designed to parse structural binary properties, match YARA signatures, query external threat intelligence feeds, and compile AI-generated mitigation reports in an isolated sandbox workspace.",
+    motivation:
+      "I wanted to build a hands-on, multi-service threat detection engine that bridges static binary deconstruction with real-time reputation analysis. By orchestrating standard parsing tools, custom YARA signatures, and a local Large Language Model (LLM), this platform provides analysts with an automated workflow to diagnose and document compiled threat indicators.",
+    features: [
+      "PE structural parsing (extracting compilation times, entry points, and section entropies) using pefile",
+      "Signature scanning matching suspicious byte sequences against custom YARA rules",
+      "Real-time reputation checks querying VirusTotal, MalwareBazaar, and AlienVault OTX APIs",
+      "Algorithmic risk scoring dynamically weighting multi-feed detection telemetry",
+      "Structured Markdown report generation outlining malicious behaviors and playbooks",
+      "Interactive threat diagnostic chat assistant streaming replies via a local LLM",
+      "Multi-container docker orchestration isolated on private bridge networks"
+    ],
+    technologies: [
+      "FastAPI",
+      "Next.js 16",
+      "PostgreSQL 15",
+      "Docker Compose",
+      "Python 3.11",
+      "pefile",
+      "yara-python",
+      "Tailwind CSS v4",
+      "Ollama (Qwen)",
+      "TypeScript",
+      "SQLAlchemy"
+    ],
+    challenges:
+      "Resolving Unix permission conflicts (EACCES) for Next.js file generation on Windows host mounts, mapping platform-specific Tailwind Rust-native compiler binaries inside Alpine Docker builds, and synchronizing asynchronous streaming token outputs from a local LLM over HTTP response streams.",
+    learnings:
+      "Mastered container isolation configurations, multi-service network bridge bindings in Docker, structural PE header analysis, YARA scanning rule syntax, and integration of external intelligence database lookups into unified backend API schemas.",
+    githubUrl: "https://github.com/ankur2312speci/APMA-TIP",
+    demoUrl: undefined,
+    imageUrl: undefined
   }
 ];
 
