@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <!-- Outer subtle glow -->
+  <rect x="3" y="3" width="58" height="58" rx="15" stroke="#ef4444" stroke-width="2" stroke-opacity="0.4" />
+  <!-- Main dark card background -->
+  <rect x="5" y="5" width="54" height="54" rx="13" fill="#0c0c0e" />
+  <!-- Crisp primary red border -->
+  <rect x="5" y="5" width="54" height="54" rx="13" stroke="#ef4444" stroke-width="3" />
+  <!-- Terminal Prompt > -->
+  <path d="M20 21L31 32L20 43" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Terminal Prompt _ -->
+  <path d="M36 43H46" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" />
+</svg>

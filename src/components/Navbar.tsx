@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { useActiveSection } from "@/hooks/useActiveSection";
-import { Sun, Moon, Laptop, Menu, X, Home, User, Code, Activity, Folder, Award, FileText, Send } from "lucide-react";
+import { Sun, Moon, Laptop, Menu, X, Home, User, Code, Activity, Folder, Award, FileText, Send, Terminal } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
@@ -66,9 +66,9 @@ export function Navbar() {
             onClick={() => handleScroll("home")}
             className="flex items-center gap-3.5 cursor-pointer select-none group"
           >
-            {/* Hexagon AS Badge */}
-            <div className="h-11 w-11 rounded-xl bg-card border-2 border-primary flex items-center justify-center font-mono font-bold text-sm text-foreground shadow-[0_0_12px_rgba(239,68,68,0.15)] group-hover:shadow-[0_0_18px_rgba(239,68,68,0.25)] transition-all shrink-0">
-              AS
+            {/* Terminal Logo Badge */}
+            <div className="h-11 w-11 rounded-xl bg-card border-2 border-primary flex items-center justify-center text-foreground shadow-[0_0_14px_rgba(239,68,68,0.2)] group-hover:shadow-[0_0_20px_rgba(239,68,68,0.35)] transition-all shrink-0">
+              <Terminal className="h-5 w-5 text-foreground group-hover:text-primary transition-colors" strokeWidth={2.5} />
             </div>
 
             {/* Profile Titles */}
