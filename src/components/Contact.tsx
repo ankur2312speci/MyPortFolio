@@ -128,12 +128,12 @@ export function Contact() {
   };
 
   return (
-    <section 
-      id="contact" 
+    <section
+      id="contact"
       className="py-[140px] px-[clamp(32px,6vw,96px)] border-b border-border bg-muted/10 relative overflow-hidden"
     >
       <div className="max-w-[1500px] mx-auto">
-        
+
         {/* Section Heading */}
         <div className="mb-16">
           <p className="text-xs font-mono tracking-widest text-primary uppercase mb-2">07. Interconnect</p>
@@ -143,23 +143,23 @@ export function Contact() {
 
         {/* 12-Column Grid Layout: Details left, Form right */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-          
+
           {/* Left Column (5/12 Columns): Collaboration Details */}
           <div className="lg:col-span-5 flex flex-col gap-6">
-            
+
             {/* Display Title */}
             <h3 className="text-[clamp(1.8rem,4vw,2.8rem)] font-bold font-display text-foreground leading-[1.1] tracking-tight">
               Ready for the Next Challenge
             </h3>
 
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed font-sans max-w-[450px]">
-              Have a network topology optimization project, security auditing requirement, or full-stack software idea? 
+              Have a network topology optimization project, security auditing requirement, or full-stack software idea?
               Reach out and let&apos;s build secure, optimized systems together.
             </p>
 
             {/* Structured Info Links List */}
             <div className="flex flex-col gap-4 mt-4 font-mono text-xs text-muted-foreground">
-              
+
               {/* Location Node */}
               <div className="flex items-center gap-3">
                 <MapPin className="h-4.5 w-4.5 text-primary shrink-0" />
@@ -186,7 +186,7 @@ export function Contact() {
               <div className="flex items-center gap-3">
                 <Linkedin className="h-4.5 w-4.5 text-accent shrink-0" />
                 <a href={contactInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-foreground hover:underline">
-                  linkedin/profile
+                  linkedin.com/in/ankur-singh-686aa7308
                 </a>
               </div>
 
@@ -232,9 +232,8 @@ export function Contact() {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 rounded-xl border bg-muted/10 text-foreground text-xs font-mono focus:outline-none focus:ring-2 focus:ring-primary/45 transition-all ${
-                      errors.name ? "border-red-500/50 focus:ring-red-500/20" : "border-border/60 focus:border-primary"
-                    }`}
+                    className={`w-full px-4 py-3 rounded-xl border bg-muted/10 text-foreground text-xs font-mono focus:outline-none focus:ring-2 focus:ring-primary/45 transition-all ${errors.name ? "border-red-500/50 focus:ring-red-500/20" : "border-border/60 focus:border-primary"
+                      }`}
                     placeholder="Enter your name"
                   />
                   {errors.name && (
@@ -256,9 +255,8 @@ export function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 rounded-xl border bg-muted/10 text-foreground text-xs font-mono focus:outline-none focus:ring-2 focus:ring-primary/45 transition-all ${
-                      errors.email ? "border-red-500/50 focus:ring-red-500/20" : "border-border/60 focus:border-primary"
-                    }`}
+                    className={`w-full px-4 py-3 rounded-xl border bg-muted/10 text-foreground text-xs font-mono focus:outline-none focus:ring-2 focus:ring-primary/45 transition-all ${errors.email ? "border-red-500/50 focus:ring-red-500/20" : "border-border/60 focus:border-primary"
+                      }`}
                     placeholder="name@example.com"
                   />
                   {errors.email && (
@@ -280,9 +278,8 @@ export function Contact() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 rounded-xl border bg-muted/10 text-foreground text-xs font-mono focus:outline-none focus:ring-2 focus:ring-primary/45 transition-all ${
-                      errors.subject ? "border-red-500/50 focus:ring-red-500/20" : "border-border/60 focus:border-primary"
-                    }`}
+                    className={`w-full px-4 py-3 rounded-xl border bg-muted/10 text-foreground text-xs font-mono focus:outline-none focus:ring-2 focus:ring-primary/45 transition-all ${errors.subject ? "border-red-500/50 focus:ring-red-500/20" : "border-border/60 focus:border-primary"
+                      }`}
                     placeholder="Subject of inquiry"
                   />
                   {errors.subject && (
@@ -304,9 +301,8 @@ export function Contact() {
                     rows={4}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 rounded-xl border bg-muted/10 text-foreground text-xs font-mono focus:outline-none focus:ring-2 focus:ring-primary/45 transition-all resize-none ${
-                      errors.message ? "border-red-500/50 focus:ring-red-500/20" : "border-border/60 focus:border-primary"
-                    }`}
+                    className={`w-full px-4 py-3 rounded-xl border bg-muted/10 text-foreground text-xs font-mono focus:outline-none focus:ring-2 focus:ring-primary/45 transition-all resize-none ${errors.message ? "border-red-500/50 focus:ring-red-500/20" : "border-border/60 focus:border-primary"
+                      }`}
                     placeholder="Write details..."
                   />
                   {errors.message && (

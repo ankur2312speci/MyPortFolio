@@ -72,8 +72,8 @@ export default function RootLayout({
     "description": "B.Tech Computer Science student specializing in Cyber Security, Networking, and Linux systems.",
     "url": "https://ankursingh.dev",
     "sameAs": [
-      "https://github.com", // Placeholder to be customized
-      "https://linkedin.com/in" // Placeholder to be customized
+      "https://github.com/ankur2312speci",
+      "https://www.linkedin.com/in/ankur-singh-686aa7308"
     ]
   };
 

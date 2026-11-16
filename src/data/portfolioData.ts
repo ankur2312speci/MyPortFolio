@@ -73,8 +73,8 @@ export const heroInfo: HeroInfo = {
   subtitle: "B.Tech Computer Science student building resilient, secure network architectures and software systems.",
   currentFocus: "Currently studying secure network communications, automated threat intelligence, and systems auditing.",
   resumeUrl: "/Ankur_Singh_CV.pdf", // TODO: Put your actual resume.pdf in the /public directory
-  githubUrl: "https://github.com/ankur2312speci", // TODO: Update with your GitHub profile link
-  linkedinUrl: "https://linkedin.com/in", // TODO: Update with your LinkedIn profile link
+  githubUrl: "https://github.com/ankur2312speci",
+  linkedinUrl: "https://www.linkedin.com/in/ankur-singh-686aa7308",
 };
 
 export const aboutInfo: AboutInfo = {
@@ -409,7 +409,7 @@ export const certificationsData: Certification[] = [
 
 export const contactInfo: ContactInfo = {
   email: "ankursingh9408@gmail.com", // TODO: Update with your professional email address
-  github: "https://github.com/ankur2312speci", // TODO: Update with your GitHub profile link
-  linkedin: "https://linkedin.com/in", // TODO: Update with your LinkedIn profile link
+  github: "https://github.com/ankur2312speci",
+  linkedin: "https://www.linkedin.com/in/ankur-singh-686aa7308",
   location: "India", // TODO: Update with your location
 };
